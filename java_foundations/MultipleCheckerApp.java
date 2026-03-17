@@ -2,13 +2,13 @@ import java.util.Scanner;
 
     public class MultipleCheckerApp {
     public static void main(String[] args) {
-    Scanner input = new Scanner(System.in);
+    Scanner inputCollector = new Scanner(System.in);
 
         System.out.print("Enter first integer: ");
-        int firstNumber = input.nextInt();
+        int firstNumber = inputCollector.nextInt();
 
         System.out.print("Enter second integer: ");
-        int secondNumber = input.nextInt();
+        int secondNumber = inputCollector.nextInt();
 
         int firstNumberTripled = firstNumber * 3;
         int secondNumberDoubled = secondNumber * 2;
@@ -22,7 +22,7 @@ import java.util.Scanner;
             System.out.println(firstNumberTripled + " (first tripled) is not a multiple of " + secondNumberDoubled + " (second doubled)");
         }
 
-        input.close();
+        inputCollector.close();
     }
 
 }
