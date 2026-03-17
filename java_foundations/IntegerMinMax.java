@@ -21,32 +21,39 @@ public class IntegerMinMax {
 
 
         int smallestNumber = firstNumber;
-        if (secondNumber < smallestNumber)
+        if (secondNumber < smallestNumber) {
             smallestNumber = secondNumber;
+        }
 
-        if (thirdNumber < smallestNumber)
+        if (thirdNumber < smallestNumber) {
             smallestNumber = thirdNumber;
+        }
 
-        if (fourthNumber < smallestNumber)
+        if (fourthNumber < smallestNumber) {
             smallestNumber = fourthNumber;
+        }
 
-        if (fifthNumber < smallestNumber)
+        if (fifthNumber < smallestNumber) {
             smallestNumber = fifthNumber;
+        }
 
 
         int largestNumber = firstNumber;
-        if (secondNumber > largestNumber)
+        if (secondNumber > largestNumber) {
             largestNumber = secondNumber;
+        }
 
-        if (thirdNumber > largestNumber)
+        if (thirdNumber > largestNumber) {
             largestNumber = thirdNumber;
+        }
 
-        if (fourthNumber > largestNumber)
+        if (fourthNumber > largestNumber) {
             largestNumber = fourthNumber;
+        }
 
-        if (fifthNumber > largestNumber)
+        if (fifthNumber > largestNumber) {
             largestNumber = fifthNumber;
-
+        }
 
         System.out.println("Smallest Integer: " + smallestNumber);
         System.out.println("Largest Integer: "  + largestNumber);
