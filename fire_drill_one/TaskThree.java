@@ -1,10 +1,7 @@
 package fire_drill_one;
 
-import java.util.Scanner;
-
 public class TaskThree {
     public static void main(String[] args) {
-        Scanner inputCollector = new Scanner(System.in);
 
         System.out.println("A program that prints odd numbers between 1 to 10 using loop.");
         System.out.println("");
@@ -27,9 +24,6 @@ public class TaskThree {
         System.out.println(" ");
        
         System.out.println("Done!");
-        
-
-        inputCollector.close();
     
     }
 

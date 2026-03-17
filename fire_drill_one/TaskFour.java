@@ -1,9 +1,6 @@
 package fire_drill_one;
-import java.util.Scanner;
-
 public class TaskFour {
     public static void main(String[] args) {
-        Scanner inputCollector = new Scanner(System.in);
 
         System.out.println("A program that prints multiples of 4 between 1 to 10 using loop.");
         System.out.println(""); 
@@ -24,7 +21,6 @@ public class TaskFour {
        
         System.out.println("Done!");
         
-        inputCollector.close();
     
     }
 
