@@ -1,13 +1,14 @@
 package fire_drill_one;
 
-public class TaskSeven {
+public class TaskEight {
     public static void main(String[] args) {
 
-        System.out.println("A program that prints the sum of the pairs from TaskSix together.");
+        System.out.println("A program that prints the sum of the pairs from TaskSeven together.");
         System.out.println("");
 
         System.out.print("Response: ");
 
+        long totalSum = 0;
         int i = 0;
         while (i++ < 10) {
             if (i % 4 == 0) {
@@ -19,17 +20,20 @@ public class TaskSeven {
                     //System.out.print(multiple);
                     sum = sum + multiple;
                     multiple = multiple * i;
-     
                     
                 }
-                System.out.print(sum);
-                System.out.print(" ");
+                totalSum = totalSum + sum;
             }
+            
         }
 
+        System.out.print(totalSum);
         System.out.println(" ");
         System.out.println("Done!");
 
     }
 }
+
+
+
 
