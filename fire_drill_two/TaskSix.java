@@ -1,4 +1,3 @@
-package fire_drill_two;
 import java.util.Scanner;
 
 public class TaskSix {
@@ -30,7 +29,7 @@ public class TaskSix {
             System.out.println("No even numbers entered.");
         }
 
-        System.out.println("Done!");
+        System.out.println("Done!"); 
 
         inputCollector.close();
     }
