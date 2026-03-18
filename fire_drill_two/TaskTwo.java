@@ -1,4 +1,3 @@
-package fire_drill_two;
 import java.util.Scanner;
 
 public class TaskTwo {
@@ -16,7 +15,7 @@ public class TaskTwo {
             sum = sum + score;
         }
 
-        double average = (double) sum / 10;
+        int average = (int) sum / 10;
 
         System.out.println("");
         System.out.println("Average of the scores is: " + average);

@@ -1,4 +1,3 @@
-package fire_drill_two;
 import java.util.Scanner;
 
 public class TaskFour {
@@ -13,6 +12,7 @@ public class TaskFour {
         while (i++ < 10) {
             System.out.print("Enter score " + i + ": ");
             int score = inputCollector.nextInt();
+
             if (i % 2 == 0) {
                 evenSum = evenSum + score;
             }

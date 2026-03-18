@@ -1,4 +1,3 @@
-package fire_drill_two;
 import java.util.Scanner;
 
 public class TaskOne {
