@@ -1,4 +1,3 @@
-package fire_drill_one;
 public class TaskFour {
     public static void main(String[] args) {
 

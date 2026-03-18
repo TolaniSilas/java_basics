@@ -1,5 +1,3 @@
-package fire_drill_one;
-
 public class TaskEight {
     public static void main(String[] args) {
 
