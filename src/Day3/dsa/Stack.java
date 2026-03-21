@@ -1,4 +1,4 @@
-package Day3.Stack;
+package Stack;
 
 public class Stack {
     
