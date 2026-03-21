@@ -1,4 +1,12 @@
 package dsa;
 
-public class Stack {
+public class StackTest {
+
+    @Test
+    public void newStack_isEmptyTest() {
+        Stack stack = new Stack();
+
+    }
+
+
 }

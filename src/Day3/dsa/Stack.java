@@ -1,4 +1,4 @@
-package Stack;
+package dsa;
 
 public class Stack {
     
