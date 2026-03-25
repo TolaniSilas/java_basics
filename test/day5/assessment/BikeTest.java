@@ -1,0 +1,16 @@
+package day5.assessment;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+
+public class BikeTest {
+
+    @Test
+    public void bikeShouldBeTurnOn() {
+        Bike bike = new Bike();
+        bike.turnOn();
+        
+        assertTrue(bike.isOn());
+    }
+
+}
