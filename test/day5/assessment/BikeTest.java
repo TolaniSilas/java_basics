@@ -18,8 +18,16 @@ public class BikeTest {
         Bike bike = new Bike();
         bike.turnOn();
         bike.turnOff();
-        
+
         assertFalse(bike.isOn());
     }
 
+    @Test
+    public void bikeShouldAccelerateByOneOnGearOne() {
+        Bike bike = new Bike();
+        bike.turnOn();
+        bike.accelerate(); 
+        assertEquals(1, bike.getSpeed());
+    }
 }
+
