@@ -54,6 +54,15 @@ public class Bike {
         speed += getGear();
     }
 
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+
+    
+    
+    
+    
+
 
 
 
