@@ -124,14 +124,31 @@ public class BikeTest {
         bike.turnOn();
         bike.setSpeed(0);
         bike.decelerate();
-        
+
         assertEquals(0, bike.getSpeed());
     }
 
+    @Test
+    public void gearShouldChangeUpWhenSpeedCrossesBoundary() {
+        Bike bike = new Bike();
+        bike.turnOn();
+        bike.setSpeed(20);
+        bike.accelerate(); 
+        bike.accelerate(); 
 
+        assertEquals(23, bike.getSpeed());
+    }
 
+    @Test
+    public void gearShouldChangeDownWhenSpeedDropsBelowBoundary() {
+        Bike bike = new Bike();
+        bike.turnOn();
+        bike.setSpeed(31);
+        bike.decelerate();
+        bike.decelerate(); 
 
-
+        assertEquals(26, bike.getSpeed());
+    }
 
 }
 

@@ -65,23 +65,11 @@ public class Bike {
 
         if (isOn) {
             speed -= getGear();
-
-             if (speed < 0) {
-            speed = 0;
+            
+            if (speed < 0) {
+                speed = 0;
             }
         }
     }
-
-    
-    
-    
-    
-
-
-
-
-
-
-
     
 }
