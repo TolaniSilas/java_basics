@@ -51,7 +51,10 @@ public class Bike {
     }
 
     public void accelerate() {
-        speed += getGear();
+
+        if (isOn) {
+            speed += getGear();
+        }
     }
 
     public void setSpeed(int speed) {
@@ -59,7 +62,10 @@ public class Bike {
     }
 
     public void decelerate() {
-    speed -= getGear();
+
+        if (isOn) {
+            speed -= getGear();
+        }
     }
 
     

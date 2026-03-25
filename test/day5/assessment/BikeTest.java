@@ -101,6 +101,23 @@ public class BikeTest {
         assertEquals(40, bike.getSpeed());
     }
 
+    @Test
+    public void bikeShouldNotAccelerateWhenOff() {
+        Bike bike = new Bike();
+        bike.accelerate();
+
+        assertEquals(0, bike.getSpeed());
+    }
+
+    @Test
+    public void bikeShouldNotDecelerateWhenOff() {
+        Bike bike = new Bike();
+        bike.setSpeed(10);
+        bike.decelerate();
+        
+        assertEquals(10, bike.getSpeed());
+    }
+
 
 
 
