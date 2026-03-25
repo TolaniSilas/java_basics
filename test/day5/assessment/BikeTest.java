@@ -114,8 +114,18 @@ public class BikeTest {
         Bike bike = new Bike();
         bike.setSpeed(10);
         bike.decelerate();
-        
+
         assertEquals(10, bike.getSpeed());
+    }
+
+    @Test
+    public void speedShouldNotGoBelowZero() {
+        Bike bike = new Bike();
+        bike.turnOn();
+        bike.setSpeed(0);
+        bike.decelerate();
+        
+        assertEquals(0, bike.getSpeed());
     }
 
 
