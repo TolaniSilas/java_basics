@@ -13,4 +13,13 @@ public class BikeTest {
         assertTrue(bike.isOn());
     }
 
+    @Test
+    public void bikeShouldBeTurnOff() {
+        Bike bike = new Bike();
+        bike.turnOn();
+        bike.turnOff();
+        
+        assertFalse(bike.isOn());
+    }
+
 }

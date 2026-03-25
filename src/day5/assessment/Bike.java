@@ -10,4 +10,8 @@ public class Bike {
     public boolean isOn() {
         return isOn;
     }
+
+    public void turnOff() {
+        isOn = false;
+    }
 }
