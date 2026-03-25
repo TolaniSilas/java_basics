@@ -58,6 +58,10 @@ public class Bike {
         this.speed = speed;
     }
 
+    public void decelerate() {
+    speed -= getGear();
+    }
+
     
     
     

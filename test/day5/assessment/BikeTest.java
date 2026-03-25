@@ -27,7 +27,7 @@ public class BikeTest {
         Bike bike = new Bike();
         bike.turnOn();
         bike.accelerate(); 
-        
+
         assertEquals(1, bike.getSpeed());
     }
 
@@ -51,7 +51,55 @@ public class BikeTest {
         assertEquals(38, bike.getSpeed());
     }
 
+    @Test
+    public void bikeShouldAccelerateByFourOnGearFour() {
+        Bike bike = new Bike();
+        bike.turnOn();
+        bike.setSpeed(44);
+        bike.accelerate();
 
+        assertEquals(48, bike.getSpeed());
+    }
+
+    @Test
+    public void bikeShouldDecelerateByOneOnGearOne() {
+        Bike bike = new Bike();
+        bike.turnOn();
+        bike.setSpeed(15);
+        bike.decelerate(); 
+
+        assertEquals(14, bike.getSpeed());
+    }
+
+    @Test
+    public void bikeShouldDecelerateByTwoOnGearTwo() {
+        Bike bike = new Bike();
+        bike.turnOn();
+        bike.setSpeed(24);
+        bike.decelerate(); 
+
+        assertEquals(22, bike.getSpeed());
+    }
+
+    @Test
+    public void bikeShouldDecelerateByThreeOnGearThree() {
+        Bike bike = new Bike();
+        bike.turnOn();
+        bike.setSpeed(35);
+        bike.decelerate(); 
+
+        assertEquals(32, bike.getSpeed());
+    }
+
+    @Test
+    public void bikeShouldDecelerateByFourOnGearFour() {
+        Bike bike = new Bike();
+        bike.turnOn();
+        bike.setSpeed(44);
+        bike.decelerate();
+
+        assertEquals(40, bike.getSpeed());
+    }
 
 
 
@@ -59,4 +107,5 @@ public class BikeTest {
 
 
 }
+
 
