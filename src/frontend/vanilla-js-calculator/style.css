@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.calculator-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    padding: 25px;
+    width: 100%;
+    max-width: 350px;
+}
+
+.display {
+    background: #2d3748;
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 25px 20px;
+    border-radius: 10px;
+    text-align: right;
+    margin-bottom: 20px;
+    min-height: 80px;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow-x: auto;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.btn {
+    background: #f7fafc;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.btn:hover {
+    background: #e2e8f0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.btn-number {
+    background: #f7fafc;
+}
+
+.btn-operator {
+    background: #4299e1;
+    color: #fff;
+}
+
+.btn-operator:hover {
+    background: #3182ce;
+}
+
+.btn-clear {
+    background: #fc8181;
+    color: #fff;
+}
+
+.btn-clear:hover {
+    background: #f56565;
+}
+
+.btn-equals {
+    background: #48bb78;
+    color: #fff;
+    grid-row: span 2;
+}
+
+.btn-equals:hover {
+    background: #38a169;
+}
+
+.btn-zero {
+    grid-column: span 2;
+}
+
+@media (max-width: 400px) {
+    .calculator {
+        padding: 20px;
+        max-width: 100%;
+    }
+    
+    .display {
+        font-size: 2rem;
+        padding: 20px 15px;
+    }
+    
+    .btn {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+}
